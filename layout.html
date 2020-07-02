@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% if title %}
+       <title>Flask Site - {{ title }}</title>
+    {% else %}
+       <title>Flask Site</title>
+    {% endif %}
+  </head>
+  <body>
+    <header>
+      <nav>
+	<ul>
+	  <li><a href="/home">[ HOME ]</a></li>
+	  <li><a href="/second">[ SECOND ]</a></li>
+	</ul>
+      </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
